@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ month|title }} Organizer</title>
+</head>
+<body>
+    <h1>{{ month|title }}'s tasks</h1>
+    {% if text %}
+        <h2>{{ text }}</h2>
+    {% else %}
+        <h2>There are no tasks for this month!</h2>
+    {% endif %}
+    <br>
+    <a href={{ index_link }}><h3>Return to index</h3></a>
+</body>
+</html>
